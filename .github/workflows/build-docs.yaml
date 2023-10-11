@@ -42,6 +42,7 @@ jobs:
       - name: Deploy to Mintlify Docs
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: docs
           publish_dir: ./mintlify
           # The following lines assign commit authorship to the official GH-Actions bot for deploys to `docs` branch.
