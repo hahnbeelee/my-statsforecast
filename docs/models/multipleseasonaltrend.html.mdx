@@ -286,7 +286,7 @@ from statsforecast import StatsForecast
 StatsForecast.plot(df)
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-7-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-7-output-1.png)
 
 ### Autocorrelation plots
 
@@ -337,7 +337,7 @@ axs[1].set_title('Partial Autocorrelation')
 plt.show();
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-8-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-8-output-1.png)
 
 ### Decomposition of the time series
 
@@ -429,7 +429,7 @@ plotSeasonalDecompose(
     title="Seasonal Decomposition")
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-10-output-2.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-10-output-2.png)
 
 ## Split the data into training and testing<a class="anchor" id="splitting"></a>
 
@@ -463,7 +463,7 @@ plt.xlabel("Hours")
 plt.show()
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-13-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-13-output-1.png)
 
 ## Implementation of MSTL Method with StatsForecast <a class="anchor" id="implementation"></a>
 
@@ -572,7 +572,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-19-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-19-output-1.png)
 
 ### Forecast Method
 
@@ -639,7 +639,7 @@ values.head()
 StatsForecast.plot(values)
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-22-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-22-output-1.png)
 
 Adding 95% confidence interval with the forecast method
 
@@ -701,7 +701,7 @@ ax.legend(prop={'size': 15})
 ax.grid(True)
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-26-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-26-output-1.png)
 
 ### Predict method with confidence interval
 
@@ -828,7 +828,7 @@ def plot_forecasts(y_hist, y_pred, models):
 plot_forecasts(df, forecast_df, models=["MSTL"])
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-32-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-32-output-1.png)
 
 Let’s plot the same graph using the plot function that comes in
 `Statsforecast`, as shown below.
@@ -837,7 +837,7 @@ Let’s plot the same graph using the plot function that comes in
 sf.plot(df, forecast_df, level=[80,95])
 ```
 
-![](MultipleSeasonalTrend_files/figure-markdown_strict/cell-33-output-1.png)
+![](/docs/models/MultipleSeasonalTrend_files/figure-markdown_strict/cell-33-output-1.png)
 
 ## Cross-validation <a class="anchor" id="cross_validate"></a>
 

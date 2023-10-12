@@ -305,7 +305,7 @@ from statsforecast import StatsForecast
 StatsForecast.plot(df)
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-8-output-1.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-8-output-1.png)
 
 ### The Augmented Dickey-Fuller Test
 
@@ -429,7 +429,7 @@ fig = px.line(df, x=df["ds"], y="return",title="SP500 Return Chart",template = "
 fig.show()
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-12-output-2.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-12-output-2.png)
 
 ### Creating Squared Returns
 
@@ -471,7 +471,7 @@ fig.update_layout(height=600, width=800, title_text="Returns vs Squared Returns"
 fig.show()
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-14-output-1.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-14-output-1.png)
 
 ```python
 from scipy.stats import probplot, moment
@@ -506,7 +506,7 @@ def plot_correlogram(x, lags=None, title=None):
 plot_correlogram(df["return"], lags=30, title="Time Series Analysis plot \n")
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-16-output-1.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-16-output-1.png)
 
 ### Ljung-Box Test
 
@@ -585,7 +585,7 @@ sns.lineplot(test, x="ds", y="y", label="Test")
 plt.show()
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-21-output-1.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-21-output-1.png)
 
 ## Implementation of ARCH with StatsForecast <a class="anchor" id="implementation"></a>
 
@@ -728,7 +728,7 @@ axs[1,1].set_title("Autocorrelation");
 plt.show();
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-28-output-1.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-28-output-1.png)
 
 ### Forecast Method
 
@@ -851,7 +851,7 @@ ax.grid(True)
 plt.show()
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-34-output-1.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-34-output-1.png)
 
 ### Predict method with confidence interval
 
@@ -960,7 +960,7 @@ def plot_forecasts(y_hist, y_true, y_pred, models):
 plot_forecasts(train, test, forecast_df, models=["ARCH(2)"])
 ```
 
-![](ARCH_files/figure-markdown_strict/cell-39-output-1.png)
+![](/docs/models/ARCH_files/figure-markdown_strict/cell-39-output-1.png)
 
 Let’s plot the same graph using the plot function that comes in
 `Statsforecast`, as shown below.

@@ -413,7 +413,7 @@ from statsforecast import StatsForecast
 StatsForecast.plot(df)
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-7-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-7-output-1.png)
 
 ### The Augmented Dickey-Fuller Test
 
@@ -543,7 +543,7 @@ axs[1].set_title('Partial Autocorrelation')
 plt.show();
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-10-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-10-output-1.png)
 
 ### Decomposition of the time series
 
@@ -606,7 +606,7 @@ a = seasonal_decompose(df["y"], model = "additive", period=24)
 a.plot();
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-11-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-11-output-1.png)
 
 ### Multiplicative
 
@@ -616,7 +616,7 @@ a = seasonal_decompose(df["y"], model = "Multiplicative", period=24)
 a.plot();
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-12-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-12-output-1.png)
 
 ## Split the data into training and testing<a class="anchor" id="splitting"></a>
 
@@ -651,7 +651,7 @@ plt.title("Ads watched (hourly data)");
 plt.show()
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-15-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-15-output-1.png)
 
 ## Implementation of Holt-Winters Method with StatsForecast <a class="anchor" id="implementation"></a>
 
@@ -1095,7 +1095,7 @@ axs[1,1].set_title("Autocorrelation");
 plt.show();
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-22-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-22-output-1.png)
 
 ### Forecast Method
 
@@ -1162,7 +1162,7 @@ values.head()
 StatsForecast.plot(values)
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-25-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-25-output-1.png)
 
 Adding 95% confidence interval with the forecast method
 
@@ -1224,7 +1224,7 @@ ax.legend(prop={'size': 15})
 ax.grid(True)
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-29-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-29-output-1.png)
 
 ### Predict method with confidence interval
 
@@ -1351,13 +1351,13 @@ def plot_forecasts(y_hist, y_pred, models):
 plot_forecasts(df, forecast_df, models=["Add"])
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-35-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-35-output-1.png)
 
 ```python
 plot_forecasts(df, forecast_df, models=["Multi"])
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-36-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-36-output-1.png)
 
 Let’s plot the same graph using the plot function that comes in
 `Statsforecast`, as shown below.
@@ -1366,7 +1366,7 @@ Let’s plot the same graph using the plot function that comes in
 sf.plot(df, forecast_df)
 ```
 
-![](HoltWinters_files/figure-markdown_strict/cell-37-output-1.png)
+![](/docs/models/HoltWinters_files/figure-markdown_strict/cell-37-output-1.png)
 
 ## Cross-validation <a class="anchor" id="cross_validate"></a>
 
